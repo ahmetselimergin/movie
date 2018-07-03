@@ -1,0 +1,326 @@
+/*
+-------- This css file created by Ahmet Selim ERGİN
+-------- E-mail:asease42@gmail.com
+-------- website: http://selimergin.net
+-------- Phone: +(90)506-3944333
+*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+    background-color: #263238;
+}
+  /*movie movie-card styles */
+.afis{
+    width:100%;
+    height:auto;
+    max-width: 840px;
+    max-height: 350px;
+}
+.mavi{
+    background-color: #005cbf;
+}
+.about-movie{
+    background-color: #3c3f41;
+    /*-webkit-filter: blur(5px); !* Safari *!*/
+    /*filter: blur(5px);*/
+}
+
+
+
+.carousel {
+    background:rgba(0 ,0 ,0 , 1);
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+    width:100%;
+    height:auto;
+    max-height:400px;
+}
+
+/*
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+    display: block;
+    width:100%;
+}
+.movie-name{
+    color:#fff;
+    margin-top: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+.ayirici{
+    border-top:1px solid rgba(255, 255, 255, 0.25);
+}
+.detail-1{
+    text-decoration: none;
+    cursor: default;
+}
+.detail-1:visited {
+    color:#fff;
+}
+
+.detail-padding-0{
+    padding-right:0px;
+    padding-left:0px;
+}
+
+/*stick header css*/
+.margin-top-20{
+    margin-top:20px;
+}
+
+/*checkbox*/
+.container .check input {
+    display: none;
+}
+.container .check input:checked + label .box {
+    -webkit-animation: animOn 0.6s 1 forwards;
+    animation: animOn 0.6s 1 forwards;
+    background: rgba(0, 0, 0, 0.5);
+    color:#ffc107;
+}
+.container .check input:checked + label .box i {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    opacity: 1;
+}
+.container .check label {
+    min-width: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 25px;
+    cursor: pointer;
+}
+.container .check label .box {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-transition: background 300ms ease;
+    transition: background 300ms ease;
+}
+.container .check label .box:hover {
+    background: rgba(75, 75, 75, 0.6);
+}
+.container .check label .box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    display: inline-block;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition-delay: 200ms;
+    transition-delay: 200ms;
+    -webkit-transform: translate(-50%, -50%) scale(6);
+    transform: translate(-50%, -50%) scale(6);
+}
+
+
+/* end of custom code */
+.list-padding{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.category .container .row .col-3{
+    padding-left: 0px;
+}
+.category .container .row .col-9{
+    padding-left: 0px;
+}
+.category .container .row{
+    margin-bottom: 10px;
+}
+/*card*/
+.item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* above items must have */
+    width: 182px;
+    background: none;
+}
+.item > img {
+    display: block;
+    width: 182px;
+    height: auto;
+}
+.item > .overlay {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0,0,0,0.8);
+    text-align: left;
+    padding: 10%;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.item:hover {
+    cursor: pointer;
+}
+.item:hover > .overlay {
+    top: 0;
+}
+.fa-yarim{
+    font-size: 1.25em;
+}
+.item-back{
+    background-color: rgba(120,120,120,0.6);
+}
+.name-pos{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#category{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+/*search bar styles*/
+
+fieldset {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+input,
+button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+input {
+    color: #666;
+    z-index: 2;
+    border: 0 none;
+}
+input:focus {
+    outline: 0 none;
+}
+input:focus + button {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+input:focus + button .fa {
+    -webkit-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: #fff;
+}
+
+button {
+    z-index: 1;
+    width: 50px;
+    border: 0 none;
+    background: #ffc107;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    -webkit-transform: translate(-50px, 0);
+    -ms-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.fa-search {
+    font-size: 1.4rem;
+    color: #ffc107;
+    z-index: 3;
+    top: 25%;
+    -webkit-transform: translate(-190px, 0);
+    -ms-transform: translate(-190px, 0);
+    transform: translate(-190px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.detail-img{
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*margin-left:10%;*/
+}
+.detail-jumbotron{
+    padding-top: 1rem;
+}
+.detail-jumbotron .detail-img{
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+.detail-jumbotron img{
+    -webkit-border-radius:0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+.play-img{
+    width: 128px;
+    height: 128px;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+}
+
+.play-img:hover {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.box{
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+.box:hover{
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

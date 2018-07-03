@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie detail page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+
+</head>
+<body>
+<!--navbar-->
+<div class="container-fluid border-bottom border-warning">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/movies/logo.png" class="d-inline-block align-top" width="80" height="40" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="form-inline flex-row ml-md-auto d-none d-md-flex" style="margin-right:60px;">
+            <fieldset><input type="search" /><button type="submit"><i class="fa fa-search"></i></button></fieldset>w
+        </form>
+        <button type="button" style="width: 100px;" class="btn btn-warning " data-toggle="modal" data-target="#exampleModalCenter">
+            Sign In
+        </button>
+        <button type="button" style="width: 100px; margin-left: 20px;" class="btn btn-success " data-toggle="modal" data-target="#exampleModalCenter">
+            Sign Up
+        </button>
+
+    </div>
+</div>
+<!--./navbar-->
+
+<!-- about movie-->
+<div class="jumbotron jumbotron-fluid detail-jumbotron border-bottom border-warning mb-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 margin-top-20" >
+                <div class="detail-img ">
+                    <img src="img/movies/big-img/death-note.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 margin-top-20" >
+                <div class="row">
+                    <div class="col-12">
+                        <div class="detail-img bg-dark ">
+                            <div class="container-fluid">
+                                <div class="row p-3" style="margin-right: 0px;">
+                                    <div class="m-1 col-12">
+                                        <a class="mb-3 text-center text-uppercase movie-name">Death Note</a>
+                                    </div>
+                                    <div class="m-2 col-12 border-bottom border-warning">
+                                        <div class="row">
+                                            <div class="col-4 detail-padding-0">
+                                                <a class="text-light text-center detail-1"><i class="far fa-clock text-warning"></i>&nbsp; 2h 22min</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="text-light text-center detail-1"><i class="fa  fa-calendar-alt text-warning"></i>&nbsp;2018</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="text-light text-center detail-1"><i class="fab fa-imdb text-warning"></i>&nbsp;7.2</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="detail-img bg-dark ">
+                            <div class="container-fluid">
+                                <div class="row p-3" style="margin-right: 0px;">
+                                    <div class="m-2 col-12 border-bottom border-warning">
+                                        <p class="text-light"  style="font-size: 0.85rem;">
+                                            A high school student named Light Turner discovers a mysterious notebook
+                                            that has the power to kill anyone whose name is written within its pages,
+                                            and launches a secret crusade to rid the world of criminals.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3 ">
+                        <div class="detail-img bg-dark">
+                            <div class="container-fluid">
+                                <div class="row p-3" style="margin-right: 0px;">
+                                    <div class="m-2 col-12 border-bottom border-warning">
+                                        <div class="row">
+                                            <div class="col-6 mt-1"><a class="text-light detail-1 text-center"><i class="fas fa-bullhorn text-warning"></i>&nbsp; Adam Wingard</a></div>
+                                            <div class="col-6 mt-1"><a class="text-light detail-1 text-center"><i class="far fa-edit text-warning"></i>&nbsp; Charley Parlapanides</a></div>
+                                            <div class="col-6 mt-1"><a class="text-light detail-1 text-center"><i class="far fa-edit text-warning"></i>&nbsp;Vlas Parlapanides </a></div>
+                                            <div class="col-6 mt-1"><a class="text-light detail-1 text-center"><i class="far fa-star text-warning "></i>&nbsp;  Nat Wolff</a></div>
+                                            <div class="col-6 mt-1"><a class="text-light detail-1 text-center"><i class="far fa-star text-warning "></i>&nbsp;  Lakeith Stanfield</a></div>
+                                            <div class="col-6 mt-1"><a class="text-light detail-1 text-center"><i class="far fa-star text-warning "></i>&nbsp; Margaret Qualley</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- movie trailers-->
+<div class="container-fluid px-4 mb-5 border-bottom border-warning pb-5 bg-secondary pt-5">
+    <div class="row">
+        <div class="col-3">
+            <div class="border border-warning box hvr-grow">
+                <a data-toggle="modal" data-target="#trailer1"><img src="img/play_icon.png" class="img-fluid play-img" alt=""></a>
+            </div>
+            <div id="trailer1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/w5iOGZ1-oZs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border border-warning box hvr-grow">
+                <a data-toggle="modal" data-target="#trailer2"><img src="img/play_icon.png" class="img-fluid play-img" alt=""></a>
+            </div>
+            <div id="trailer2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0SiyGOyAlW4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border border-warning box hvr-grow">
+                <a data-toggle="modal" data-target="#trailer3"><img src="img/play_icon.png" class="img-fluid play-img" alt=""></a>
+            </div>
+            <div id="trailer3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0SiyGOyAlW4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border border-warning box hvr-grow">
+                <a data-toggle="modal" data-target="#trailer4"><img src="img/play_icon.png" class="img-fluid play-img" alt=""></a>
+            </div>
+            <div id="trailer4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0SiyGOyAlW4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- for more movie-->
+<div class="container-fluid pb-5 px-4">
+    <div class="row">
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/deathnote.jpg" class="img-fluid hover-img" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a href="movie-detail.html" class="movie-name">Death Note</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/3idiots.jpeg" class="img-fluid hover-img" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">3 Idiots</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/it.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">IT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/justiceleague.jpeg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Justice League</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/legomovie.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Lego Movie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/logan.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Logan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/pasificrim.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Pacific Rim 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/bright.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Bright</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/darkknight.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Batman :Dark Knight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/jumanji.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Jumanji 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/superhero.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Super Hero</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/robocop.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Robocop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/ironman.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Ironman</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/hellboy.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Hellboy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 margin-top-20 movie ">
+            <div class="item">
+                <img src="img/movies/infini.jpg" class="img-fluid" alt="">
+                <div class=" overlay ">
+                    <div class="row">
+
+                        <div class="col-12"><a class="movie-name  fa-yarim"><i class="fab fa-imdb text-warning "></i>&nbsp;&nbsp;&nbsp;8.1</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-clock text-info"></i>&nbsp;&nbsp;1h 22m</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-eye text-danger"></i>&nbsp; 3654</a></div>
+                        <div class="col-12"><a class="movie-name fa-yarim"><i class="fa fa-calendar-alt text-ase"></i>&nbsp;&nbsp;&nbsp;2017</a></div>
+                        <div class="col-12 item-back name-pos border-top border-warning ">
+                            <a class="movie-name">Infini</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
